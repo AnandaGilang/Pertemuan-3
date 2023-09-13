@@ -1,0 +1,121 @@
+buat list dengan nama "Mahasiswa"
+from datetime import date
+today = date.today()
+date_string = today.strftime("%Y-%m-%d")
+
+mahasiswa = ['Ananda Gilang Prasetya',
+            '2022071022','INFORMATIKA',
+             'Desain Analisis Algoritma',
+        'Universitas Pembangunan Jaya', date_string]
+for mhs in mahasiswa:
+  print(mhs + "UPJ")
+
+Cetak NIM memanggil urutan indeks
+from datetime import date
+today = date.today()
+date_string = today.strftime("%Y-%m-%d")
+
+mahasiswa = ['Ananda Gilang Prasetya',
+            '2022071022','INFORMATIKA',
+             'Desain Analisis Algoritma',
+        'Universitas Pembangunan Jaya', date_string]
+ print(mahasiswa[1])
+
+Cetak Nama universitas memanggil urutan indeks
+from datetime import date
+today = date.today()
+date_string = today.strftime("%Y-%m-%d")
+
+mahasiswa = ['Ananda Gilang Prasetya',
+            '2022071022','INFORMATIKA',
+             'Desain Analisis Algoritma',
+        'Universitas Pembangunan Jaya', date_string]
+print(mahasiswa[4])
+
+Cetak NIM dan prodi
+from datetime import date
+today = date.today()
+date_string = today.strftime("%Y-%m-%d")
+
+mahasiswa = ['Ananda Gilang Prasetya',
+            '2022071022','INFORMATIKA',
+             'Desain Analisis Algoritma',
+        'Universitas Pembangunan Jaya', date_string]
+print(mahasiswa[1:3])
+
+cetak isi list "mahasiswa" tambahkan kata "UPJ" didepan
+today = date.today()
+date_string = today.strftime("%Y-%m-%d")
+
+mahasiswa = ['Ananda Gilang Prasetya',
+            '2022071022','INFORMATIKA',
+             'Desain Analisis Algoritma',
+        'Universitas Pembangunan Jaya', date_string]
+for mhs in mahasiswa:
+  print("UPJ"+ mhs)
+
+susun tuple bernama "UPJ"dengan isi universita,pembangunan,jaya
+upj_tuple = ('universitas', 'pembangunan', 'jaya')
+
+print("Nama:", upj_tuple[0])
+print("Moto 1:", upj_tuple[1])
+print("Moto 2:", upj_tuple[2])
+
+buat tuple "nested_tuple" dengan nilai
+nested_tuple = ('100','200 400 600','300','400 800')
+print("pertama : ",nested_tuple[0])
+print("kedua   : ",nested_tuple[1])
+print("ketiga  : ",nested_tuple[2])
+print("keempat : ",nested_tuple[3])
+
+key value
+mahasiswa = {
+    "Nama" : "Ananda Gilang Prasetya",
+    "NIM" : "2022071022",
+    "Prodi" : "Informatika",
+    "Universitas" : "UPJ"
+}
+print(mahasiswa)
+
+bagaimana menyusun red sehingga mendapatkan hasil berikut
+#Latihan
+red = {'dandelions', 'Leaves', 'fire hydrant',}
+yelow = {'rose', 'blood', 'leaves', 'fire hydrant'}
+
+print(red & yelow)
+print(red | yelow)
+
+buatlah data frame
+import pandas as pd
+
+data = {
+    'no': [1, 2, 3],
+    'prodi': ['Informatika', 'Sistem Informasi', 'Teknik Sipil'],
+    'mahasiswa': [50, 55, 40],
+    'laki-laki': [30, 30, 30],
+    'perempuan': [20, 25, 10]
+}
+
+mhs = pd.DataFrame(data)
+
+print(mhs)
+
+buatlah matriks
+import numpy as np
+
+matrix = np.array([[100, 200, 300],
+                   [700, 600, 500],
+                   [900, 1000, 800]])
+
+transposed_matrix = np.transpose(matrix)
+
+print("Matriks awal:")
+print(matrix)
+
+print("\nMatriks setelah di-transpose:")
+print(transposed_matrix)
+
+
+
+
+
